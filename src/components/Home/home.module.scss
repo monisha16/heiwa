@@ -1,0 +1,49 @@
+
+.heiwa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+
+    &__image{
+        height: 50%;
+        width: 30%;
+        &:hover{
+            animation: bounce 3s ease-in-out;
+        }
+        
+    }
+}
+.main-heading{
+    background: linear-gradient(-45deg,#0e95a7,#03a4d6,#0d74ac, #0d5ea1,#490f96, #5600c7, #34077c );;
+    background-size: 600% 100%;
+    animation: gradient 2s ease infinite;
+    animation-direction: alternate;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes gradient {
+    to {opacity: 1;}
+    0% {
+        background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    80%{
+        transform: translateY(-20px);
+    }
+}
+

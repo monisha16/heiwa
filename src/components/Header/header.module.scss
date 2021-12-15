@@ -1,0 +1,11 @@
+.heiwa-header{
+    padding: 1.25rem 2.25rem;
+    height: 12vh;//4.75rem
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;//#34558b
+    position: fixed;
+    top:0;
+    z-index:1;
+}

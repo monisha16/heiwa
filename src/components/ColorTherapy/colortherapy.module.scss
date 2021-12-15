@@ -1,0 +1,75 @@
+.color-therapy{
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    height:100vh;
+    
+
+    &__gradient-cool{
+        width:100%;
+        height:100%;
+        background: linear-gradient(-45deg,#03f3bd,#06b39b,#08a5a2,#0e95a7,#03a4d6,#0d74ac, #0d5ea1,#135cbb, #0456f0, #0442f6 );
+        background-size: 600% 100%;
+        animation: gradient 10s ease infinite;
+        animation-direction: alternate;
+    }
+    &__gradient-warm{
+        width:100%;
+        height:100%;
+        background: linear-gradient(45deg,#f3e503,#eebc07, #f48607,#f55709, #f6280b );
+        // background: linear(#f3e503,#eebc07, #f48607,#f55709, #f6280b) ;
+        background-size: 300% 100%;
+        animation: gradient 10s ease infinite;
+        animation-direction: alternate;
+    }
+    // &__gradient-rainbow{
+    //     width:100%;
+    //     height:100%;
+    //     background: linear-gradient(-45deg,#ee82ee, #4b0082, #0000ff, #008000, #ffff00, #ffa500, #ff0000 );
+    //     // background: linear-gradient(-45deg,red,#f55709, orange,#eebc07, yellow, rgb(130, 201, 15),green,rgb(5, 100, 48) ,rgb(30, 57, 131),rgb(54, 54, 211), rgb(71, 12, 182),indigo,rgb(108, 0, 130), rgb(191, 63, 241),violet);
+    //     background-size: 600% 100%;
+    //     animation: gradient 20s alternate ease-out infinite;
+    //     // animation-direction: alternate;
+    // }
+    &__gradient-rainbow{
+        width:100%;
+        height:100%;
+        background: linear-gradient(-45deg,#ee82ee, #4b0082, #0000ff, #008000, #ffff00, #ffa500, #ff0000 );
+        // background: linear-gradient(-45deg,red,#f55709, orange,#eebc07, yellow, rgb(130, 201, 15),green,rgb(5, 100, 48) ,rgb(30, 57, 131),rgb(54, 54, 211), rgb(71, 12, 182),indigo,rgb(108, 0, 130), rgb(191, 63, 241),violet);
+        background-size: 600% 100%;
+        // animation: gradient 20s alternate ease-out infinite;
+        height: 100%;
+        transition: 4s ease-in-out;
+        animation: gradient 10s alternate infinite;
+    }
+
+   
+    @keyframes gradient {
+        to {opacity: 1;}
+        0% {
+		background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    &__button-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position:fixed;
+        bottom:5rem;
+        margin: 1rem;
+        width: 50rem;
+        height: 3rem;
+        background: rgba(67, 67, 75, 0.3);
+        /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+        border-radius: 10px;
+        backdrop-filter: blur(6px);
+    }
+
+}
