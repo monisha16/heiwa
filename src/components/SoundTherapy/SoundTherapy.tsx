@@ -1,8 +1,10 @@
 
 import React,{ useState, useEffect } from "react";
-// import Button from "@mui/material/Button";
+import Button from "@mui/material/Button";
+import styles from './soundtherapy.module.scss';
+import { styled } from '@mui/material/styles';
+
 // // import "./card.styles.scss";
-// import styles
 // import Slider from '@mui/material/Slider';
 // import { styled } from '@mui/material/styles';
 // import storage from "../../storage";
@@ -80,18 +82,13 @@ import React,{ useState, useEffect } from "react";
 
 
 const SoundTherapy = (): JSX.Element => {
+    const rainMp3 = require("./assests/sounds/rain.mp3");
+
     return(
-        <h1>Hello</h1>
+        <div>
+            <h1>SOund</h1>
+        </div>
     )}
-//     // { reRender, setReRender }
-//     return (
-//         <div className="Card-Container">
-//             {storage.map((item) => {
-//                 console.log(item)
-//                 // <SoundCard key={item.name} reRender={reRender} setReRender={setReRender} title={item.name} Icon={item.image} sound={item.sound}></SoundCard>
-//             })}
-//         </div>
-//     );
-// }
+
 
 export default SoundTherapy;
