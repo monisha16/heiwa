@@ -1,5 +1,5 @@
 # Access this project through :
-https://mood-setter.netlify.app/
+https://heiwa.netlify.app/
 
 # Getting Started with Create React App
 
