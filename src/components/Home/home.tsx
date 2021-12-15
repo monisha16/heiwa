@@ -6,7 +6,6 @@ import { Button } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
 const HomeComponent = ():JSX.Element =>{
-    const [reRender, setReRender] = useState(false);
     const navigate = useNavigate();
     return(
         <>

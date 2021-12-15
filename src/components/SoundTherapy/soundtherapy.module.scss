@@ -1,11 +1,4 @@
 .st-container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // width: 100%;
-    // margin-top: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +30,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    
     h1 {
         margin: 0;
         font-size: 1.2rem;
@@ -45,22 +39,11 @@
         height:5rem;
         width:5rem;
         font-size: 5rem;
+        opacity:0.3rem;
     }
   }
 
 }
-.gradient-animation {
-  background-image: linear-gradient(
-    115deg,
-    #4fcf70,
-    #fad648,
-    #a767e5,
-    #12bcfe,
-    #44ce7b
-  ) !important;
-  animation: play 1.6s ease-in infinite;
-}
-
 @keyframes play {
   0% {
     background-position: 0;
@@ -81,4 +64,19 @@
     background-position: -390px;
   }
 }
+
+.gradient-animation {
+    color: aqua;
+//   background: linear-gradient(
+//     45deg,
+//     #4fcf70,
+//     #fad648,
+//     #a767e5,
+//     #12bcfe,
+//     #44ce7b
+//   ) !important;
+//   animation: play 1.6s ease-in infinite;
+}
+//115deg
+
 

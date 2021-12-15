@@ -85,17 +85,17 @@ const storage = [
     {
         image: WindChimes,
         sound: windchimesMp3,
-        name: "528 Hz- himaliyan bowl",
+        name: "windchimes",
     },
     {
         image: Hz396,
         sound: hz396Mp3,
-        name: "396Hz",
+        name: "Hz396",
     },
     {
         image: Hz528,
         sound: hz528Mp3,
-        name: "528Hz-himaliyan bowl",
+        name: "Hz528",
     },
     {
         image: Cafe,
