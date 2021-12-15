@@ -16,7 +16,7 @@ const HomeComponent = ():JSX.Element =>{
                 <div style={{ fontSize: '2rem', marginBottom:'1rem' }}> Tune into your body and experience true peace. </div>
                 <div>
                     <Button variant="outlined" style={{ marginRight: "0.5rem" }} onClick={()=>{navigate('/soundtherapy');}}> Sound Therapy</Button>
-                        <Button variant="outlined" onClick={() => { navigate('/colortherapy'); }}> Color Therapy</Button>
+                    <Button variant="outlined" onClick={() => { navigate('/colortherapy'); }}> Color Therapy</Button>
                 </div>
             </div>
             <img className={styles['heiwa__image']} src={Heiwa} alt="Meditation SVG" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import  HomeComponent  from './components/Home/home';
 import ColorTherapy from './components/ColorTherapy/ColorTherapy';
-// import SoundTherapy from './components/SoundTherapy/SoundTherapy';
+import SoundTherapy from './components/SoundTherapy/SoundTherapy';
 import Header from './components/Header/Header';
 import { BrowserRouter, Routes, Route, HistoryRouterProps} from 'react-router-dom';
 
@@ -13,7 +13,7 @@ function App() {
       <Routes>
           <Route path='/' element={<HomeComponent/>} />
           <Route path='/colortherapy' element={<ColorTherapy />} />
-          {/* <Route path='/soundtherapy' element={<SoundTherapy />} /> */}
+          <Route path='/soundtherapy' element={<SoundTherapy />} />
       </Routes>
     </BrowserRouter>
     

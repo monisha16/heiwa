@@ -1,11 +1,18 @@
-.Card-Container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
-  margin-top: 30px;
+.st-container {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // width: 100%;
+    // margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 8rem 0 0 8rem;
 }
 .Card {
   margin: 10px;
@@ -27,27 +34,20 @@
     display: flex;
     background: white;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
     h1 {
-      margin: 0;
-      font-size: 1rem;
-      opacity: 0.85;
-      font-weight: unset;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    img{
+        height:5rem;
+        width:5rem;
+        font-size: 5rem;
     }
   }
 
-  &__VolumeContainer {
-    display: flex;
-    position: absolute;
-    bottom: 5px;
-    background-color: #ebe9df;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 180px;
-  }
 }
 .gradient-animation {
   background-image: linear-gradient(
