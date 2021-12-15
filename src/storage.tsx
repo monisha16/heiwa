@@ -33,24 +33,6 @@ const Hz396  = require("./assests/icons/hz396.svg");
 const Hz528  = require("./assests/icons/hz528.svg");
 
 
-// import Rain  from "./assests/icons/rain.svg";
-// import Lightning  from "./assests/icons/lightning.svg";
-// import Wind from "./assests/icons/wind.svg";
-// import CampFire from "./assests/icons/campfire.svg";
-// import Forest from "./assests/icons/forest.svg";
-// import Farm from "./assests/icons/farm.svg";
-// import Birds from "./assests/icons/birds.svg";
-// import Night from "./assests/icons/night.svg";
-// import WindChimes from "./assests/icons/windchimes.svg";
-// import Train from "./assests/icons/train.svg";
-// import Office  from "./assests/icons/office.svg";
-// import Steps from "./assests/icons/steps.svg";
-// import Keyboard from "./assests/icons/keyboard.svg";
-// import Cafe from "./assests/icons/cafe.svg";
-// import Hz396 from "./assests/icons/hz396.svg";
-// import Hz528 from "./assests/icons/hz528.svg";
-
-
 const storage = [
     {
         image: Rain,
