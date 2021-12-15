@@ -90,12 +90,12 @@ const storage = [
     {
         image: Hz396,
         sound: hz396Mp3,
-        name: "396 Hz",
+        name: "396Hz",
     },
     {
         image: Hz528,
         sound: hz528Mp3,
-        name: "528 Hz- himaliyan bowl",
+        name: "528Hz-himaliyan bowl",
     },
     {
         image: Cafe,
