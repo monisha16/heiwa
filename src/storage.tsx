@@ -12,8 +12,8 @@ import officeMp3 from "./assests/sounds/office.mp3";
 import stepsMp3 from "./assests/sounds/steps.mp3";
 import keyboardMp3 from "./assests/sounds/keyboard.mp3";
 import cafeMp3 from "./assests/sounds/cafe.mp3";
-import hz396Mp3 from "./assests/sounds/hz396.mp3";
-import hz528Mp3 from "./assests/sounds/hz528.mp3";
+import hz396Mp3 from "./assests/sounds/Hz396.mp3";
+import hz528Mp3 from "./assests/sounds/Hz528.mp3";
 
 const Rain = require("./assests/icons/rain.svg");
 const Lightning   = require("./assests/icons/lightning.svg");
