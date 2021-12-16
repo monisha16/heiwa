@@ -1,5 +1,5 @@
 ### Access this project through :
-https://heiwa.netlify.app/
+https://heiwa.netlify.app/ <br>
 *This project is an attempt at creating a single platform to experience Color and Sound Therapy*
 _____________________________________________________
 
