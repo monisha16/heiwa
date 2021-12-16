@@ -7,6 +7,7 @@
     width: 85%;
     margin: 8rem 0 0 8rem;
 }
+
 .Card {
   margin: 10px;
   cursor: pointer !important;
@@ -21,6 +22,7 @@
     }
   }
   &__ButtonInner {
+
     height: 160px;
     width: 160px;
     border-radius: 20px;
@@ -34,49 +36,17 @@
     h1 {
         margin: 0;
         font-size: 1.2rem;
+        font-weight: unset;
     }
     img{
         height:5rem;
-        width:5rem;
-        font-size: 5rem;
-        opacity:0.3rem;
     }
   }
 
 }
-@keyframes play {
-  0% {
-    background-position: 0;
-  }
-  20% {
-    background-position: -110px;
-  }
-  35% {
-    background-position: -180px;
-  }
-  50% {
-    background-position: -210px;
-  }
-  80% {
-    background-position: -350px;
-  }
-  to {
-    background-position: -390px;
-  }
-}
 
-.gradient-animation {
-    color: aqua;
-//   background: linear-gradient(
-//     45deg,
-//     #4fcf70,
-//     #fad648,
-//     #a767e5,
-//     #12bcfe,
-//     #44ce7b
-//   ) !important;
-//   animation: play 1.6s ease-in infinite;
-}
-//115deg
+
+
+
 
 

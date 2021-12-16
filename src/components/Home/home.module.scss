@@ -12,7 +12,13 @@
         &:hover{
             animation: bounce 3s ease-in-out;
         }
-        
+    }
+    &__button-st{
+       height: 3rem;
+        width: 12rem;
+        color: #4e4e4e  !important;
+        border: 2px solid rgb(0 0 0 / 12%) !important;
+        font-weight: bolder !important;
     }
 }
 .main-heading{
