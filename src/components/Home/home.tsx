@@ -1,4 +1,3 @@
-import React,{useState} from "react";
 import Footer from '../Footer/footer';
 import styles from './home.module.scss';
 import Heiwa from '../../assests/images/heiwa.svg'

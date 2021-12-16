@@ -5,14 +5,6 @@ import linkedin from '../../assests/icons/linkedin.svg'
 import styles from './footer.module.scss'
 
 const Footer: React.FC = () => {
-    // const location = useLocation();
-    // Regex to of path's that have nav bar.
-    // const routeRegex = [/colotherapy/];
-    // // Check path to see if the screen has a nav bar or not.
-    // const checkPath = routeRegex.find((text:any) => text.test(location.pathname));
-    // Footer style object.
-    const checkPath = true;
-    const page = "color";
 
     const footerStyle: React.CSSProperties = {
         position: 'fixed',
@@ -22,7 +14,7 @@ const Footer: React.FC = () => {
         alignItems:'center',
         bottom: 0,
         paddingBottom: '5px',
-        color: page == "color" ? 'black' : 'white',
+        color: 'black',
         padding: '0 7rem',
         boxSizing: 'border-box',
         width: '100%',
