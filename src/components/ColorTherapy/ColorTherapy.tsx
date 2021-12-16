@@ -9,10 +9,10 @@ const ColorTherapy = ():JSX.Element => {
         <div className={styles['color-therapy']}>
             <div style={{ display: 'flex', justifyContent: 'space-around' }} className={styles[bgColor]}>
                 <div className={styles['color-therapy__button-header']}>
-                    <ButtonGroup variant="text" aria-label="text button group">
-                        <Button onClick={() => setbgColor('color-therapy__gradient-warm')}>Warm Tones</Button>
-                        <Button onClick={() => setbgColor('color-therapy__gradient-cool')}>Cool tones</Button>
-                        <Button onClick={() => setbgColor('color-therapy__gradient-rainbow')}>Rainbow</Button>
+                    <ButtonGroup className={styles['ct-buttongroup']} variant="text" aria-label="text button group">
+                        <Button className={styles['ct-button']} onClick={() => setbgColor('color-therapy__gradient-warm')}>Warm Tones</Button>
+                        <Button className={styles['ct-button']} onClick={() => setbgColor('color-therapy__gradient-cool')}>Cool tones</Button>
+                        <Button className={styles['ct-button']} onClick={() => setbgColor('color-therapy__gradient-rainbow')}>Rainbow</Button>
                     </ButtonGroup>
                 </div>
             </div>

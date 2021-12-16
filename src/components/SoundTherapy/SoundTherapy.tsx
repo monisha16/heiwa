@@ -8,15 +8,15 @@ const SoundCard = ({ title, Icon, sound, reRender, setReRender }:any) => {
     useEffect(() => {
         return
     }, [reRender])     
-
     return(
         <div className={styles["Card"]}>
             <Button className={styles["Card__Button"]}
                 style={{
                     borderRadius: 20,
-                    background: 'rgb(126 122 122 / 23%)',
+                    // background: 'rgb(25 118 210 / 4%);',
                     textTransform: "none",
                     padding: 0,
+                    background: "white",
                 }}>
 
                 <div id={`${title}-card`} className={styles["Card__Button__gr"]}>
@@ -28,13 +28,12 @@ const SoundCard = ({ title, Icon, sound, reRender, setReRender }:any) => {
                                 setReRender(!reRender);
                                 document
                                     .querySelector(`#${title}-card`)!
-                                    .classList.remove(`gradient-animation`);
+                                    .classList.remove(`gradientAnimation`);
                                 return;
                             }
-                            console.log("withAdd", document.querySelector(`#${title}-card`)!)
                             document
                                 .querySelector(`#${title}-card`)!
-                                .classList.add(`gradient-animation`);
+                                .classList.add(`gradientAnimation`);
                             audioPlayer.play();
                             setReRender(!reRender);
                         }}
@@ -47,10 +46,10 @@ const SoundCard = ({ title, Icon, sound, reRender, setReRender }:any) => {
                         >
                             <h1>{title}</h1>
                         </div>
-                            <img src={Icon} alt={title} />
-                            <audio id={title} preload="none" loop>
-                                <source src={sound} type="audio/mp3" />
-                            </audio>
+                        <img src={Icon} alt={title} />
+                        <audio id={title} preload="none" loop>
+                            <source src={sound} type="audio/mp3" />
+                        </audio>  
                     </div>
                 </div>
 
@@ -64,7 +63,7 @@ const SoundCard = ({ title, Icon, sound, reRender, setReRender }:any) => {
 const SoundTherapy = (): JSX.Element => {
     const [reRender, setReRender] = useState(false);
     return(
-            <div className={styles["st-container"]}>
+            <div  className={styles["st-container"]}>
                 {storage.map((item) => {
                     console.log("items",item)
                     return <SoundCard key={item.name} reRender={reRender} setReRender={setReRender} title={item.name} Icon={item.image.default} sound={item.sound}></SoundCard>
