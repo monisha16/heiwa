@@ -3,10 +3,15 @@
     align-items: center;
     width: 8%;
     justify-content: space-around;
+    
+    a{
+        display:flex;
+        height: 2rem;
+    }
 
 }
  .footer-bg{
-     display: flex;
-     margin-top: 1rem;
-    background: linear-gradient(0deg, #34558b9e, transparent);
+    display: flex;
+    margin-top: 1rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
  }
