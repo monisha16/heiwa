@@ -13,10 +13,9 @@ const SoundCard = ({ title, Icon, sound, reRender, setReRender }:any) => {
             <Button className={styles["Card__Button"]}
                 style={{
                     borderRadius: 20,
-                    // background: 'rgb(25 118 210 / 4%);',
                     textTransform: "none",
                     padding: 0,
-                    background: "white",
+                    background: '#d2d2d53b',
                 }}>
 
                 <div id={`${title}-card`} className={styles["Card__Button__gr"]}>

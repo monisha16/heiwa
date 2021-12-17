@@ -1,34 +1,10 @@
-
-.heiwa{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-
-    &__image{
-        height: 50%;
-        width: 30%;
-        &:hover{
-            animation: bounce 3s ease-in-out;
-        }
-    }
-    &__button-st{
-       height: 3rem;
-        width: 12rem;
-        color: #4e4e4e  !important;
-        border: 2px solid rgb(0 0 0 / 12%) !important;
-        font-weight: bolder !important;
-    }
+*{
+  box-sizing: border-box;
+    margin:0;
+    padding:0;
+    position: relative;  
 }
-.main-heading{
-    background: linear-gradient(-45deg,#0e95a7,#03a4d6,#0d74ac, #0d5ea1,#490f96, #5600c7, #34077c );;
-    background-size: 600% 100%;
-    animation: gradient 2s ease infinite;
-    animation-direction: alternate;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
+
 @keyframes gradient {
     to {opacity: 1;}
     0% {
@@ -53,3 +29,74 @@
     }
 }
 
+.heiwa-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 95vh;
+        padding: 3rem calc((100vw - 1300px) / 2);
+    }
+
+
+.left-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+    padding: 0rem 2rem;
+
+    &__main-heading{
+        background: linear-gradient(-45deg,#0e95a7,#03a4d6,#0d74ac, #0d5ea1,#490f96, #5600c7, #34077c );;
+        background-size: 600% 100%;
+        animation: gradient 2s ease infinite;
+        animation-direction: alternate;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin-bottom: 1rem;
+        font-size:5rem;
+        font-weight: bolder;
+    }
+    p{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        line-height:1.5;
+        color:black;
+        font-weight: 400;
+    }
+    .info-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__button {
+            // padding: 1rem 3rem !important;
+            font-size: .9rem !important;
+            margin-right: .5rem !important;
+            cursor: pointer !important;
+            height: 3rem;
+            width: 12rem;
+            color: rgba(0, 0, 0, 0.637)  !important; 
+            border: 2px solid rgb(0 0 0 / 12%) !important;
+            &:hover{
+                border: 2px solid rgba(21, 62, 173, 0.568) !important;
+            }
+        }
+    }   
+}
+
+.right-column{
+    display: flex;
+    justify-content: center;
+    padding: 0rem 2rem;
+    align-items: center;
+    &__heiwa-image{
+        width: 30rem;
+        &:hover{
+            animation: bounce 3s ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .heiwa-container{
+        grid-template-columns: 1fr ;
+    }
+}

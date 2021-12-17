@@ -8,17 +8,19 @@ const HomeComponent = ():JSX.Element =>{
     const navigate = useNavigate();
     return(
         <>
-        <div className={styles['heiwa']}>
-            <div className={styles['heiwa__info']}>
-                <div className={styles['main-heading']} style={{fontSize:'5rem', fontWeight:'bolder'}}> HEIWA </div>
-                <div style={{ fontSize: '2rem', marginBottom:'1rem' }}> Tune into your body and experience true peace. </div>
-                <div>
-                    <Button className={styles['heiwa__button-st']} variant="outlined" style={{ marginRight: "0.5rem" }} onClick={()=>{navigate('/soundtherapy');}}> Sound Therapy</Button>
-                    <Button className={styles['heiwa__button-st']} variant="outlined" onClick={() => { navigate('/colortherapy'); }}> Color Therapy</Button>
+                <div className={styles['heiwa-container']}>
+                    <div className={styles['left-column']}>
+                        <h1 className={styles['left-column__main-heading']}>HEIWA</h1>
+                        <p>Tune into your body and experience true peace.</p>
+                        <div className={styles['info-button']}>
+                            <Button className={styles['info-button__button']} variant="outlined" onClick={() => { navigate('/soundtherapy'); }}> Sound Therapy</Button>
+                            <Button className={styles['info-button__button']} variant="outlined" onClick={() => { navigate('/colortherapy'); }}> Color Therapy</Button>
+                        </div>
+                    </div>
+                    <div className={styles['right-column']}>
+                        <img className={styles['right-column__heiwa-image']} src={Heiwa} alt="Meditation SVG" />
+                    </div>
                 </div>
-            </div>
-            <img className={styles['heiwa__image']} src={Heiwa} alt="Meditation SVG" />
-        </div>
         <Footer/>
         </>
     );
