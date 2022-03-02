@@ -1,9 +1,4 @@
-### Access this project through :
-https://heiwa.netlify.app/ <br>
-*This project is an attempt at creating a single platform to experience Color and Sound Therapy*
-_____________________________________________________
-
-### This repo is open for collaborations :heart: <br> <br>
+## This repo is open for collaborations :heart: <br>
 Some suggestions for collab: <br>
 1. Add new audios that brings peace to you or just something that youd want to play in the background while you do your tasks ✨ <br>
 2. Add better color gradient modes ✨
